@@ -1,8 +1,8 @@
 <div align="center">
 
-# Hypas Anti-Cheat
+# Hypas RedM Anti-Cheat
 
-### Layered security, evidence-led investigations and active protection for RedM servers.
+### Premium RedM anti-cheat for VORP servers with event protection, entity monitoring, aim and ESP evidence, economy security and an advanced admin panel.
 
 [![RedM](https://img.shields.io/badge/Platform-RedM-8B252B)](#)
 [![Framework](https://img.shields.io/badge/Framework-VORP-315A49)](#)
@@ -18,7 +18,7 @@
 
 ## Overview
 
-Hypas Anti-Cheat is a commercial security resource developed specifically for RedM servers.
+Hypas RedM Anti-Cheat is a premium security solution built specifically for RedM and VORP servers. It provides layered event protection, entity monitoring, behavioural analysis, evidence logging and administrative response tools.
 
 It uses multiple defensive layers rather than relying on a single detection. The system combines event protection, entity monitoring, resource checks, behavioural signals, evidence collection and administrator review tools to help server teams identify suspicious activity and respond proportionately.
 
