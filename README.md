@@ -1,242 +1,171 @@
-# Hypas Anti-Cheat Premium v4.12.4
+<div align="center">
 
-Premium RedM/VORP anti-cheat and server-authority protection suite for serious roleplay servers.
+# Hypas Anti-Cheat
 
-This release is packaged for commercial sale and Cfx.re Asset Escrow upload. It keeps the working v4.11.25 standalone VORP inventory/money wipe adapter, the v4.12.x premium admin panel polish, safe customer defaults, and a warning-only escrow/update status panel.
+### Layered security, evidence-led investigations and active protection for RedM servers.
 
-## Important Folder Name Requirement
+[![RedM](https://img.shields.io/badge/Platform-RedM-8B252B)](#)
+[![Framework](https://img.shields.io/badge/Framework-VORP-315A49)](#)
+[![Documentation](https://img.shields.io/badge/Documentation-Available-284C66)](docs/index.md)
+[![Support](https://img.shields.io/badge/Support-Discord-5865F2)](#support)
+[![Commercial](https://img.shields.io/badge/Source-Commercial-101B25)](#licensing)
 
-The resource folder must be named exactly:
+**Built to Catch What Others Miss.**
 
-```cfg
-hypas_anticheat
-```
+</div>
 
-The resource contains a commercial resource-name lock. If the folder is renamed, the script will log a resource-name mismatch and stop itself.
+---
 
-## Requirements
+## Overview
 
-Required:
+Hypas Anti-Cheat is a commercial security resource developed specifically for RedM servers.
 
-- RedM server
-- VORP Core
-- `vorp_inventory`
-- `oxmysql`
-- Database access to import `sql/install.sql`
+It uses multiple defensive layers rather than relying on a single detection. The system combines event protection, entity monitoring, resource checks, behavioural signals, evidence collection and administrator review tools to help server teams identify suspicious activity and respond proportionately.
 
-Optional:
+Hypas Anti-Cheat does **not** claim that any anti-cheat can stop every possible attack. Its purpose is to reduce exposure, detect abnormal behaviour, preserve useful evidence and give administrators practical response controls.
 
-- `screenshot-basic` for screenshot evidence
-- `hypas_economy` for Hypas economy examples
-- `bcc-law` / law systems for law integrations
-- `vorp_admin` is optional only; Hypas does not require it for inventory/money wipe tools
+> **This repository contains public documentation only.**  
+> The commercial source code, detection logic and protected implementation are not published here.
 
-## Install
+---
 
-1. Place the resource in your resources folder as `hypas_anticheat`.
-2. Import `sql/install.sql` into your database.
-3. Add the resource after VORP and oxmysql in `server.cfg`.
+## Core capabilities
 
-```cfg
-ensure oxmysql
-ensure vorp_core
-ensure vorp_inventory
-ensure screenshot-basic # optional, only needed for screenshot evidence
-ensure hypas_anticheat
+- Event firewall and honeypot protection
+- Entity creation and spam monitoring
+- Economy, inventory and weapon watchdogs
+- Resource integrity monitoring
+- Movement and teleport anomaly reporting
+- Aim and combat behaviour analysis
+- Menu and suspicious-native reporting
+- Player risk scoring and strike history
+- Evidence timelines and investigation notes
+- Staff audit logging
+- Administrative containment tools
+- Testing, balanced and strict operating modes
+- Health checks and installation auditing
 
-add_ace group.admin hypas.ac.admin allow
-```
+---
 
-4. Restart the server.
-5. Join as an admin and run:
+## Screenshots
 
-```cfg
-/acsetup
-/achealth
-/aclevel status
-/acpanel
-```
+Replace the example filenames below with the screenshots you upload to the `images` folder.
 
-Fresh installs start in safe testing mode. Do not enable kicks or bans until normal gameplay has been tested and false positives have been reviewed.
+### Administration panel
 
-## Safe Go-Live Flow
+![Hypas Anti-Cheat administration panel](images/dashboard.png)
 
-1. Install in testing mode.
-2. Run `/achealth`.
-3. Open `/acpanel`.
-4. Test normal player actions, jobs, shops, crafting, teleports, revive/respawn and rewards.
-5. Review `/acrecent`, Discord logs and Staff Audit.
-6. Move to `/aclevel balanced` only after false positives are cleared.
-7. Enable kicks before bans.
-8. Enable bans last.
+### Player investigation
 
-## Access and Updates
+![Hypas Anti-Cheat player investigation](images/player-investigation.png)
 
-Hypas Anti-Cheat Premium is sale-ready for Cfx Asset Escrow and Tebex delivery. The release does **not** require a local licence key by default because Cfx/Tebex asset access handles customer entitlement.
+### Detection and evidence logs
 
-The `/acpanel` Access / Updates card shows:
+![Hypas Anti-Cheat evidence logs](images/evidence.png)
 
-- Access: `Escrow Managed`
-- Customer: `Tebex / Cfx Asset Access`
-- Installed version
-- Latest version, if you configure `Config.License.LatestVersionUrl`
-- Update status
-- Protection status
+### Protection health
 
-The version checker is warning-only by default. Outdated versions are not blocked, so a customer server will not stop working if your update endpoint is offline.
+![Hypas Anti-Cheat protection health](images/health.png)
 
-## Headline Features
-
-- Premium `/acpanel` command centre.
-- Live player risk view.
-- Recent detections and severity filtering.
-- Evidence centre with ban evidence, appeal notes and unban workflow.
-- Screenshot evidence support where `screenshot-basic` is installed.
-- Staff action audit log.
-- One-click Testing, Balanced and Strict protection levels.
-- Standalone VORP inventory/money wipe adapter; `vorp_admin` is not required.
-- Server-side payout gateway for protected money rewards.
-- Protected item and weapon reward exports.
-- Teleport allowance system for Guarma, Sisika, admin teleports, hospital respawns and jail/prison scripts.
-- Event firewall, honeypots, resource integrity checks, SQL guard and panic lockdown.
-
-## Admin Commands
-
-```cfg
-/acsetup
-/achealth
-/aclevel status
-/aclevel testing
-/aclevel balanced
-/aclevel strict
-/acpanel
-/acrecent
-/acstrikes [serverId]
-/acreset [serverId]
-/acsuspend [serverId] [seconds] [reason]
-/acresume [serverId]
-/acallowtp [serverId] [seconds] [reason]
-/acteleports [serverId]
-/acwipeprobe [serverId]
-```
-
-The required ACE permission for panel access is:
-
-```cfg
-add_ace group.admin hypas.ac.admin allow
-```
+---
 
 ## Documentation
 
-- `docs/CUSTOMER_INSTALL_GUIDE.md` - detailed install and first-run guide.
-- `docs/ESCROW_UPLOAD_GUIDE.md` - creator-side escrow upload checklist.
-- `docs/SUPPORT_POLICY.md` - recommended support boundaries.
-- `docs/ACCESS_AND_UPDATE_CHECKER.md` - escrow-managed access and optional version checker notes.
-- `docs/COMPATIBILITY_MATRIX.md` - supported, partially supported and integration-required resources.
-- `docs/FALSE_POSITIVE_GUIDE.md` - common false positives and safe fixes.
-- `docs/STANDALONE_VORP_WIPE_ADAPTER.md` - inventory/money wipe support without `vorp_admin`.
-- `docs/VERSIONING_POLICY.md` - release numbering and update policy.
-- `docs/RELEASE_READINESS_CHECKLIST.md` - final test checklist.
-- `docs/ADMIN_PANEL_SELLING_POINTS.md` - admin panel sales/screenshot guidance.
-- `integrations_ready_to_copy/` - copyable gateway integration snippets.
+| Guide | Purpose |
+|---|---|
+| [Documentation Home](docs/index.md) | Full documentation index |
+| [Installation](docs/installation.md) | Install the resource and database |
+| [Quick Start](docs/quick-start.md) | Complete the first safe setup |
+| [Configuration](docs/configuration.md) | Understand modes and major settings |
+| [Permissions](docs/permissions.md) | Configure administrator access |
+| [Commands](docs/commands.md) | Available administration commands |
+| [Administration Panel](docs/admin-panel.md) | Navigate the panel and player tools |
+| [Detection Systems](docs/detections.md) | High-level explanation of protection layers |
+| [Evidence and Investigations](docs/evidence-and-investigations.md) | Review alerts without relying on one signal |
+| [Troubleshooting](docs/troubleshooting.md) | Resolve common installation issues |
+| [FAQ](docs/faq.md) | Common purchasing and operational questions |
+| [Security Guide](docs/redm-security-guide.md) | Defensive RedM security fundamentals |
+| [Roadmap](docs/roadmap.md) | Public development direction |
 
-## Maximum Protection Requires Integration
+---
 
-Hypas works immediately for logging, honeypots, panel investigation, connection logging, resource checks and common abuse guards.
+## Commands
 
-For maximum protection, money, item, weapon and sensitive job events should be routed through Hypas exports.
+The principal administration commands are:
 
-### Safe money reward
-
-```lua
-exports.hypas_anticheat:PayPlayer(source, {
-    action = 'job_payment',
-    type = 'cash',
-    amount = amount,
-    resource = GetCurrentResourceName()
-})
+```text
+/acsetup
+/acpanel
+/achealth
+/acaudit
 ```
 
-### Safe item reward
+Some diagnostic or test commands may be limited to development and authorised testing environments. See the [commands guide](docs/commands.md) before using them.
 
-```lua
-exports.hypas_anticheat:GiveItem(source, {
-    action = 'crafting_reward',
-    item = itemName,
-    amount = amount,
-    resource = GetCurrentResourceName()
-})
-```
+---
 
-### Safe weapon reward
+## Compatibility
 
-```lua
-exports.hypas_anticheat:GiveWeapon(source, {
-    action = 'law_armoury',
-    weapon = weaponName,
-    ammo = ammo or 0,
-    resource = GetCurrentResourceName()
-})
-```
+Hypas Anti-Cheat is designed for:
 
-### Safe scripted teleport
+- RedM
+- VORP Core
+- oxmysql
 
-```lua
-exports.hypas_anticheat:AllowTeleport(source, {
-    reason = 'guarma_travel',
-    seconds = 25,
-    from = GetEntityCoords(GetPlayerPed(source)),
-    to = vector3(1269.78, -6854.46, 43.37),
-    radius = 100.0,
-    maxDistance = 10000.0
-})
-```
+Individual integrations may require configuration depending on the server's economy, inventory, permission model and custom resources.
 
-## Commercial Defaults
+---
 
-- `Config.TestMode = true`
-- `Config.ProtectionLevel = 'testing'`
-- `Config.Punishments.KickEnabled = false`
-- `Config.Punishments.BanEnabled = false`
-- `Config.ResourceGuard.ExpectedResourceName = 'hypas_anticheat'`
-- `Config.ResourceGuard.ResourceNameHardStop = true`
+## Purchase
 
-These defaults are intentional. Buyers should move into enforcement gradually after testing.
+Hypas Anti-Cheat is a commercial product distributed through Tebex.
 
-- `docs/RESOURCE_GUARD_OPTIONAL_RESOURCES.md` - optional integration monitoring without missing-resource console spam.
+**Purchase link:** `https://the-lobby-shop.tebex.io/package/7543365`
 
+Before purchasing, review the installation requirements and ensure your server framework matches the supported environment.
 
-## New in v4.12.5
+---
 
-- Stronger Mod Menu Shield defaults for fake admin events, weather/time abuse, entity spam, ped/animal spawning, and crash-style event spam.
-- Expanded honeypots and event firewall coverage for obvious non-admin admin actions.
-- Stronger entity guard defaults with ped/animal rate limiting and cancel-on-rate-limit support.
+## Support
 
+**Discord:** `https://discord.gg/TeBh6UfHEm`
 
-## New in v4.12.6
+For support, provide:
 
-- Entity spam detections are now marked as critical and use 12 strike points when punishments are live.
-- Suspicious spawn bursts can trigger automatic deletion of the owner's peds, animals, vehicles, and objects.
+- Hypas Anti-Cheat version
+- RedM server build
+- Framework version
+- Relevant console output
+- A concise description of what happened
+- Steps to reproduce the issue, where possible
 
-## New in v4.12.7
+Do not post private licence details, database credentials or suspected exploit payloads publicly.
 
-- Safer RedM Entity Guard defaults with warning and critical thresholds.
-- Auto-delete now targets recently tracked entities attributed to the same owner/type, reducing risk from ambient NPC ownership.
+---
 
-## New in v4.12.12
+## Licensing
 
-- Stable restore build.
-- Entity Guard has been reverted to the last known working v4.12.7 behaviour.
-- Later object-burst/client-cleanup experiments have been removed.
+This repository is provided for documentation and product information.
 
-## New in v4.12.13
+The commercial Hypas Anti-Cheat resource is proprietary software. Purchasing access does not grant permission to redistribute, resell, decompile, bypass escrow protection or publish protected source code.
 
-- Expanded anti-mod-menu trap layer.
-- Added fake NUI callback traps, suspicious client resource-name scan, freecam/spectate evidence and horse speed manipulation reporting.
-- Entity Guard remains the confirmed working v4.12.12 stable version.
+See [SECURITY.md](SECURITY.md) for responsible vulnerability reporting.
 
-## New in v4.12.14
+---
 
-- Ambient-safe Entity Guard adjustment.
-- Ped/animal rate limiting is disabled by default because RedM can attribute town NPCs/animals to nearby players.
-- Vehicle/wagon, object and unknown entity spam protection remains enabled.
+## Current documented release
+
+**v4.12.14 — Ambient Safe**
+
+This release retains the Menu Native Shield and adjusts entity protection to reduce false positives involving normal ambient pedestrians and animals.
+
+See [CHANGELOG.md](CHANGELOG.md) for the public release history.
+
+---
+
+<div align="center">
+
+**Hypas Development**  
+RedM systems built for serious servers.
+
+</div>
