@@ -49,23 +49,22 @@ Hypas Anti-Cheat does **not** claim that any anti-cheat can stop every possible 
 
 ## Screenshots
 
-Replace the example filenames below with the screenshots you upload to the `images` folder.
 
 ### Administration panel
 
-![Hypas Anti-Cheat administration panel](images/dashboard.png)
+![Hypas Anti-Cheat administration panel](screenshots/overview.png)
 
 ### Player investigation
 
-![Hypas Anti-Cheat player investigation](images/player-investigation.png)
+![Hypas Anti-Cheat player investigation](screenshots/players.png)
 
 ### Detection and evidence logs
 
-![Hypas Anti-Cheat evidence logs](images/evidence.png)
+![Hypas Anti-Cheat evidence logs](screenshots/banned.png)
 
 ### Protection health
 
-![Hypas Anti-Cheat protection health](images/health.png)
+![Hypas Anti-Cheat protection health](screenshots/overview.png)
 
 ---
 
