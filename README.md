@@ -51,8 +51,6 @@ Hypas Anti-Cheat does **not** claim that any anti-cheat can stop every possible 
 
 ## Screenshots
 
-Replace the example filenames below with the screenshots you upload to the `images` folder.
-
 ### Administration panel
 
 ![Hypas Anti-Cheat administration panel](screenshots/overview.png)
@@ -123,7 +121,7 @@ Individual integrations may require configuration depending on the server's econ
 
 Hypas Anti-Cheat is a commercial product distributed through Tebex.
 
-**Purchase link:** `https://the-lobby-shop.tebex.io/package/7543365`
+**Purchase link:** https://the-lobby-shop.tebex.io/package/7543365
 
 Before purchasing, review the installation requirements and ensure your server framework matches the supported environment.
 
@@ -131,7 +129,7 @@ Before purchasing, review the installation requirements and ensure your server f
 
 ## Support
 
-**Discord:** `https://discord.gg/TeBh6UfHEm`
+**Discord:** https://discord.gg/TeBh6UfHEm
 
 For support, provide:
 
