@@ -166,3 +166,94 @@ html{scroll-behavior:smooth}
   .hypasSection{padding:31px 25px!important}
   .relatedGuides{padding:0 17px}
 }
+
+
+/* Security Centre article 002 — realistic security components */
+.articleHeroShort h1{max-width:760px}
+.answerBanner{margin:45px 0 70px;padding:45px 50px;border:1px solid rgba(174,184,191,.3);background:linear-gradient(120deg,rgba(40,76,102,.3),rgba(8,16,24,.25))}
+.answerBanner>span{color:#7290a0;font-size:8px;letter-spacing:.17em}
+.answerBanner h2{max-width:1040px;margin:18px 0 15px;font:400 clamp(31px,4.3vw,50px)/1.12 Georgia,serif}
+.answerBanner p{max-width:930px;color:#98a4ab;font-size:14px;line-height:1.75}
+
+.bypassMeaningGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:38px}
+.bypassMeaningGrid article{min-height:215px;padding:27px;border:1px solid var(--border);background:rgba(8,16,24,.35)}
+.bypassMeaningGrid span{color:#607f90;font-size:8px;letter-spacing:.16em}
+.bypassMeaningGrid h3{margin:20px 0 11px;font-size:23px}
+.bypassMeaningGrid p{margin:0;font-size:12px;line-height:1.65}
+
+.resilienceTable{margin:38px 0;border-top:1px solid var(--border);border-left:1px solid var(--border)}
+.resilienceHead,.resilienceTable>div{display:grid;grid-template-columns:.7fr 1.15fr 1.15fr}
+.resilienceHead span{padding:13px 18px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(40,76,102,.17);color:#6f8997;font-size:8px;letter-spacing:.14em}
+.resilienceTable>div:not(.resilienceHead)>*{margin:0;padding:20px 18px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.resilienceTable b{font:400 19px Georgia;color:#ccd1d3}
+.resilienceTable p{font-size:11px;line-height:1.6;background:rgba(8,16,24,.28)}
+
+.authorityComparison{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:38px 0}
+.authorityComparison article{padding:29px;border:1px solid var(--border);background:rgba(8,16,24,.34)}
+.authorityComparison article:last-child{background:linear-gradient(145deg,rgba(40,76,102,.24),rgba(8,16,24,.32));border-color:rgba(174,184,191,.27)}
+.authorityComparison small{color:#607d8d;font-size:8px;letter-spacing:.15em}
+.authorityComparison h3{margin:24px 0 12px;font-size:25px}
+.authorityComparison p{margin:0;font-size:12px}
+.authorityComparison span{display:block;margin-top:22px;padding-top:17px;border-top:1px solid rgba(174,184,191,.1);color:#8798a2;font-size:10px;line-height:1.55}
+
+.articleQuote{margin:32px 0;padding:29px 34px;border-left:2px solid #6e8998;background:rgba(40,76,102,.15);font:400 25px/1.45 Georgia;color:#d0d3d4}
+
+.limitationList{display:grid;gap:10px;margin-top:35px}
+.limitationList article{display:grid;grid-template-columns:125px 1fr;border:1px solid var(--border);background:rgba(8,16,24,.32)}
+.limitationList>article>span{padding:27px 20px;border-right:1px solid var(--border);color:#617d8d;font-size:8px;letter-spacing:.15em}
+.limitationList>article>div{padding:25px 29px}
+.limitationList h3{margin:0 0 9px;font-size:22px}
+.limitationList p{margin:0;font-size:12px}
+
+.securityCycle{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-top:38px}
+.securityCycle article{min-height:265px;padding:23px;border:1px solid var(--border);background:rgba(8,16,24,.33)}
+.securityCycle b{font:36px Georgia;color:#5f7886}
+.securityCycle span{display:block;margin-top:30px;color:#617f8f;font-size:8px;letter-spacing:.15em}
+.securityCycle h3{margin:18px 0 11px;font-size:20px}
+.securityCycle p{margin:0;font-size:10px;line-height:1.6}
+
+.hardeningSteps{margin-top:36px;border-top:1px solid var(--border)}
+.hardeningSteps article{display:grid;grid-template-columns:78px 1fr;border-left:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(8,16,24,.3)}
+.hardeningSteps>article>span{padding:27px 22px;border-right:1px solid var(--border);font:29px Georgia;color:#5e7786}
+.hardeningSteps>article>div{padding:24px 28px}
+.hardeningSteps h3{margin:0 0 9px;font-size:22px}
+.hardeningSteps p{margin:0;font-size:12px}
+
+.claimGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:35px}
+.claimGrid article{min-height:230px;padding:28px;border:1px solid var(--border);background:rgba(8,16,24,.33)}
+.claimGrid article:not(.claimWeak){background:linear-gradient(145deg,rgba(40,76,102,.22),rgba(8,16,24,.3))}
+.claimGrid small{color:#628092;font-size:8px;letter-spacing:.15em}
+.claimGrid h3{margin:25px 0 12px;font-size:24px}
+.claimGrid p{margin:0;font-size:12px}
+.claimWeak{border-color:rgba(139,37,43,.35)!important}
+.claimWeak small{color:#98666a}
+
+.verdictPanel{margin-top:30px;padding:29px;border:1px solid rgba(174,184,191,.2);background:rgba(8,16,24,.37)}
+.verdictPanel small{color:#658394;font-size:8px;letter-spacing:.15em}
+.verdictPanel p{margin:17px 0 0;font:400 21px/1.55 Georgia;color:#cbd0d2}
+
+.faqList{margin-top:34px;border-top:1px solid var(--border)}
+.faqList details{border-left:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(8,16,24,.3)}
+.faqList summary{cursor:pointer;padding:21px 25px;font:400 20px Georgia;color:#c9ced0;list-style:none}
+.faqList summary::-webkit-details-marker{display:none}
+.faqList summary:after{content:"+";float:right;color:#647f8e}
+.faqList details[open] summary:after{content:"–"}
+.faqList details p{margin:0;padding:0 25px 24px;font-size:12px}
+
+.nextGuide{text-decoration:none;display:block;transition:.22s}
+a.nextGuide:hover{transform:translateY(-3px);border-color:rgba(174,184,191,.36)}
+
+@media(max-width:1100px){
+  .securityCycle{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:700px){
+  .answerBanner{padding:31px 25px}
+  .bypassMeaningGrid,.authorityComparison,.claimGrid{grid-template-columns:1fr}
+  .resilienceHead{display:none}
+  .resilienceTable>div:not(.resilienceHead){grid-template-columns:1fr}
+  .resilienceTable>div:not(.resilienceHead)>*{border-bottom:1px solid rgba(174,184,191,.08)}
+  .limitationList article{grid-template-columns:1fr}
+  .limitationList>article>span{border-right:0;border-bottom:1px solid var(--border)}
+  .securityCycle{grid-template-columns:1fr}
+}
