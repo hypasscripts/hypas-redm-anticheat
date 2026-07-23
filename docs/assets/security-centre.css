@@ -1,0 +1,110 @@
+/* Hypas Security Centre — page-specific layer
+   Upload to: docs/assets/security-centre.css
+   Requires the existing docs/assets/style.css file. */
+
+.navActive{color:var(--ivory);position:relative}
+.navActive:after{content:"";position:absolute;left:0;right:0;bottom:-12px;height:1px;background:rgba(231,227,216,.62)}
+
+.centreHero{min-height:790px;padding:150px max(22px,calc((100vw - var(--max))/2)) 92px;display:grid;grid-template-columns:.95fr 1.05fr;gap:74px;align-items:center;border-bottom:1px solid var(--border)}
+.centreHero h1{margin:0;font:400 clamp(52px,6vw,84px)/1.03 Georgia,serif;letter-spacing:-.04em}
+.centreHero h1 em{font-style:normal;color:#91a2ad}
+.centreHeroCopy .lead{max-width:650px}
+
+.knowledgePanel{position:relative;padding:10px;border:1px solid rgba(174,184,191,.24);background:linear-gradient(145deg,rgba(16,27,37,.88),rgba(6,11,16,.95));box-shadow:0 30px 80px rgba(0,0,0,.42);overflow:hidden}
+.knowledgePanel:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 74% 22%,rgba(40,76,102,.28),transparent 42%),linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);background-size:auto,34px 34px,34px 34px}
+.knowledgeTop{position:relative;z-index:1;height:42px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);color:#7f909d;font-size:8px;letter-spacing:.14em}
+.knowledgeTop span{display:flex;align-items:center;gap:9px}
+.knowledgeTop i{width:7px;height:7px;border-radius:50%;background:#7fa88c;box-shadow:0 0 12px #7fa88c}
+.knowledgeTop b{color:#aeb8bf;font-size:9px}
+
+.knowledgeSeal{position:relative;z-index:1;margin:35px auto 30px;width:150px;height:150px;display:grid;place-items:center;border:1px solid rgba(174,184,191,.28);border-radius:50%;box-shadow:inset 0 0 0 10px rgba(174,184,191,.025),0 0 50px rgba(40,76,102,.14)}
+.knowledgeSeal:before,.knowledgeSeal:after{content:"";position:absolute;border-radius:50%}
+.knowledgeSeal:before{inset:12px;border:1px dashed rgba(174,184,191,.18)}
+.knowledgeSeal:after{inset:31px;border:1px solid rgba(174,184,191,.12)}
+.knowledgeSeal span{font:56px Georgia;color:var(--ivory)}
+.knowledgeSeal small{position:absolute;bottom:24px;color:#71838f;font-size:7px;letter-spacing:.17em}
+
+.knowledgeRows{position:relative;z-index:1;display:grid;gap:8px}
+.knowledgeRows div{min-height:64px;padding:12px 14px;display:grid;grid-template-columns:95px 1fr 24px;gap:13px;align-items:center;border:1px solid rgba(174,184,191,.11);background:rgba(8,16,24,.72)}
+.knowledgeRows span{color:#637783;font-size:7px;letter-spacing:.14em}
+.knowledgeRows b{font:15px Georgia;font-weight:400;color:#bec6cb}
+.knowledgeRows em{font-style:normal;color:#596b77;font-size:9px;text-align:right}
+.knowledgePanel>p{position:relative;z-index:1;margin:18px 12px 11px;color:#687984;font-size:9px;line-height:1.55}
+
+.centreStrip{margin-top:0}
+
+.sectionHeading{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:start}
+.sectionCode{padding:8px 11px;border:1px solid var(--border);color:#687984;font-size:8px;letter-spacing:.14em;white-space:nowrap}
+
+.featuredGuide{padding-top:120px}
+.featureArticle{position:relative;margin-top:48px;min-height:310px;padding:38px;display:grid;grid-template-columns:90px 1fr 250px;gap:34px;align-items:start;text-decoration:none;border:1px solid rgba(174,184,191,.24);background:linear-gradient(120deg,rgba(40,76,102,.21),rgba(8,16,24,.22));transition:.25s;overflow:hidden}
+.featureArticle:after{content:"";position:absolute;width:240px;height:240px;right:-90px;bottom:-130px;border:1px solid rgba(174,184,191,.08);border-radius:50%}
+.featureArticle:hover{transform:translateY(-4px);border-color:rgba(174,184,191,.43)}
+.featureNumber{font:64px Georgia;color:#536875;line-height:1}
+.featureArticle small{color:#69808e;font-size:8px;letter-spacing:.16em}
+.featureArticle h3{margin:20px 0 15px;font:38px Georgia;font-weight:400}
+.featureArticle p{max-width:650px;color:#93a0a9}
+.featureArticle>div:nth-child(2)>span{display:inline-block;margin-top:23px;font-size:11px;font-weight:800}
+.featureTopics{display:flex;flex-direction:column;gap:9px}
+.featureTopics span{padding:10px 12px;border:1px solid rgba(174,184,191,.12);background:rgba(6,11,16,.28);color:#8b9aa3;font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+
+.librarySection{padding-top:75px}
+.guideGrid{margin-top:47px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.guideCard{min-height:370px;padding:33px;display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--border);background:linear-gradient(145deg,rgba(16,27,37,.43),rgba(8,16,24,.2));transition:.25s}
+.guideCard:hover{transform:translateY(-3px);border-color:rgba(174,184,191,.38);background:rgba(23,36,47,.55)}
+.guideMeta{display:flex;justify-content:space-between;align-items:center;color:#627783;font-size:8px;letter-spacing:.15em}
+.guideMeta b{font:16px Georgia;color:#7c8f9b}
+.guideCard h3{margin:30px 0 13px;font:30px Georgia;font-weight:400}
+.guideCard p{color:#87959e;font-size:13px}
+.guideCard ul{list-style:none;margin:16px 0 24px;padding:0}
+.guideCard li{padding:8px 0 8px 20px;border-bottom:1px solid rgba(174,184,191,.07);color:#8f9ba4;font-size:11px;position:relative}
+.guideCard li:before{content:"◇";position:absolute;left:0;color:#647d8d}
+.guideCard>strong{margin-top:auto;font-size:11px}
+.productCard{background:linear-gradient(140deg,rgba(40,76,102,.28),rgba(8,16,24,.22))}
+
+.upcomingSection{padding-top:75px}
+.roadmapGrid{margin-top:47px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.roadmapCard{min-height:285px;padding:30px;border:1px solid var(--border);background:rgba(8,16,24,.34);position:relative}
+.roadmapCard.next{background:linear-gradient(145deg,rgba(40,76,102,.28),rgba(8,16,24,.34));border-color:rgba(174,184,191,.28)}
+.roadmapCard .status{position:absolute;right:18px;top:18px;padding:6px 8px;border:1px solid rgba(174,184,191,.15);color:#6f818c;font-size:7px;letter-spacing:.13em}
+.roadmapCard.next .status{color:#aeb8bf;border-color:rgba(174,184,191,.28)}
+.roadmapCard small{display:block;margin-top:45px;color:#607785;font-size:8px;letter-spacing:.15em}
+.roadmapCard h3{margin:20px 0 13px;font:25px Georgia;font-weight:400;line-height:1.15}
+.roadmapCard p{color:#82909a;font-size:12px}
+
+.audienceSection{padding-top:75px}
+.audienceGrid{margin-top:43px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border);border-left:1px solid var(--border)}
+.audienceGrid article{min-height:260px;padding:31px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:linear-gradient(145deg,rgba(16,27,37,.35),rgba(8,16,24,.17))}
+.audienceGrid small{color:#607785;font-size:8px;letter-spacing:.15em}
+.audienceGrid h3{margin:28px 0 13px;font:27px Georgia;font-weight:400}
+.audienceGrid p{color:#87959e;font-size:13px}
+
+.principles{max-width:var(--max);margin:0 auto 112px;padding:62px;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;border:1px solid var(--border);background:linear-gradient(120deg,rgba(16,27,37,.5),rgba(8,16,24,.2))}
+.principles h2{font-size:clamp(36px,4vw,52px)}
+.principleList p{margin:0;padding:16px 0;border-bottom:1px solid rgba(174,184,191,.09);color:#8d9aa3}
+.principleList p:first-child{padding-top:0}
+.principleList b{color:#c2c8cc}
+
+.centreCta{margin-top:0}
+
+@media(max-width:950px){
+  .centreHero{grid-template-columns:1fr;min-height:auto}
+  .featureArticle{grid-template-columns:70px 1fr}
+  .featureTopics{grid-column:2}
+  .roadmapGrid,.audienceGrid{grid-template-columns:repeat(2,1fr)}
+  .principles{grid-template-columns:1fr}
+}
+
+@media(max-width:650px){
+  .navActive:after{display:none}
+  .centreHero{padding:108px 17px 75px;gap:48px}
+  .centreHero h1{font-size:47px}
+  .knowledgeRows div{grid-template-columns:77px 1fr 20px}
+  .sectionHeading{grid-template-columns:1fr}
+  .sectionCode{justify-self:start}
+  .featureArticle{padding:27px;grid-template-columns:1fr}
+  .featureNumber{font-size:44px}
+  .featureTopics{grid-column:auto}
+  .guideGrid,.roadmapGrid,.audienceGrid{grid-template-columns:1fr}
+  .principles{margin:0 17px 82px;padding:38px 25px;gap:38px}
+}
