@@ -50,12 +50,13 @@ Sensitive economy, inventory, job and reward events should still validate reques
 
 ## Where can I purchase it?
 
-Add your Tebex product URL to the repository README and this page:
+Choose a Hypas Anti-Cheat licence on the official Tebex store:
 
-`ADD_YOUR_TEBEX_PRODUCT_URL_HERE`
+- [One-time licence](https://the-lobby-shop.tebex.io/package/7543365)
+- [Monthly licence](https://the-lobby-shop.tebex.io/package/7588830)
+
+Current prices, taxes, currency and entitlement conditions are shown at checkout.
 
 ## How do I get support?
 
-Join the support Discord:
-
-`ADD_YOUR_DISCORD_INVITE_HERE`
+Join the [Hypas support Discord](https://discord.gg/TeBh6UfHEm). For technical support, include the Anti-Cheat version, RedM build and relevant console messages—but never share private licence keys or database credentials in public.

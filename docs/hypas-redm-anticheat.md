@@ -15,7 +15,7 @@ Rather than depending on one detection method, Hypas combines multiple defensive
 
 > **Built to Catch What Others Miss.**
 
-[View the documentation](index.md) · [Read the FAQ](faq.md) · [Purchase through Tebex](https://the-lobby-shop.tebex.io/package/7543365) · [Join the support Discord](https://discord.gg/TeBh6UfHEm)
+[View the documentation](documentation.md) · [Read the FAQ](faq.md) · [Purchase through Tebex](https://the-lobby-shop.tebex.io/package/7543365) · [Join the support Discord](https://discord.gg/TeBh6UfHEm)
 
 ---
 
@@ -242,7 +242,7 @@ Secure RedM development still requires server-side validation, careful permissio
 
 Hypas Anti-Cheat is distributed commercially through Tebex.
 
-[Purchase Hypas RedM Anti-Cheat](ADD_YOUR_TEBEX_PRODUCT_URL_HERE)
+[View one-time licence on Tebex](https://the-lobby-shop.tebex.io/package/7543365) · [View monthly licence on Tebex](https://the-lobby-shop.tebex.io/package/7588830)
 
 Before purchasing, review:
 
@@ -255,7 +255,7 @@ Before purchasing, review:
 
 ## Support
 
-[Join the Hypas support Discord](ADD_YOUR_DISCORD_INVITE_HERE)
+[Join the Hypas support Discord](https://discord.gg/TeBh6UfHEm)
 
 For effective support, provide:
 
